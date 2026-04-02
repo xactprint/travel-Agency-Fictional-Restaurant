@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>La Casbah — Fine Dining</title>
+
+    <!-- Bootstrap 5 CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <!-- Brand / Logo -->
+        <a class="navbar-brand" href="#hero">La <span>Casbah</span></a>
+
+        <!-- Mobile Toggle -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNav"
+          aria-controls="mainNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Nav Links -->
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- /navbar -->
+
+    <!-- HERO SECTION -->
+
+    <section id="hero">
+      <div class="hero-content px-3">
+        <p class="hero-eyebrow">Est. 2009 · Alger</p>
+        <h1 class="hero-title">Where Every Dish<br />Tells <em>A Story</em></h1>
+        <p class="hero-sub">
+          Seasonal ingredients. Timeless technique. Unforgettable evenings.
+        </p>
+        <a href="#menu" class="btn btn-gold">Explore the Menu</a>
+      </div>
+    </section>
+    <!-- /hero -->
+
+    <!-- MENU SECTION -->
+
+    <section id="menu">
+      <div class="container">
+        <!-- Section Heading -->
+        <div class="text-center">
+          <div class="section-rule"><span>Our Menu</span></div>
+          <h2 class="section-title" style="color: var(--warm)">
+            Crafted with Passion
+          </h2>
+          <p class="section-intro">
+            Each plate is a canvas — composed from the finest market produce and
+            guided by decades of culinary artistry.
+          </p>
+        </div>
+
+        <!-- Menu Cards Row -->
+        <div class="row g-4 mt-2">
+          <!-- Card 1 -->
+          <div class="col-md-4">
+            <div class="menu-card card h-100">
+              <img
+                src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=600&q=80"
+                alt="Seared Scallops"
+              />
+              <div class="card-body">
+                <h3 class="card-title">Seared Scallops</h3>
+                <p class="card-text">
+                  Pan-seared Brittany scallops on a cauliflower velouté, with
+                  crispy capers and a lemon beurre blanc.
+                </p>
+                <span class="price-tag">2800 DZD</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="col-md-4">
+            <div class="menu-card card h-100">
+              <img
+                src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600&q=80"
+                alt="Garden Salad"
+              />
+              <div class="card-body">
+                <h3 class="card-title">Garden Harvest</h3>
+                <p class="card-text">
+                  Heritage heirloom tomatoes, burrata, wild rocket and basil oil
+                  with toasted sourdough croutons.
+                </p>
+                <span class="price-tag">1800 DZD</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="col-md-4">
+            <div class="menu-card card h-100">
+              <img
+                src="https://images.unsplash.com/photo-1558030006-450675393462?w=600&q=80"
+                alt="Duck Confit"
+              />
+              <div class="card-body">
+                <h3 class="card-title">Duck Confit</h3>
+                <p class="card-text">
+                  Slow-cooked Gascon duck leg, Sarladaise potatoes, glazed baby
+                  turnips and a cherry jus reduction.
+                </p>
+                <span class="price-tag">3400 DZD</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /row -->
+      </div>
+    </section>
+    <!-- /menu -->
+
+    <!-- ABOUT SECTION -->
+
+    <section id="about">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <!-- Image Column -->
+          <div class="col-md-6">
+            <div class="about-img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80"
+                alt="Our restaurant interior"
+              />
+            </div>
+          </div>
+
+          <!-- Text Column -->
+          <div class="col-md-6">
+            <div class="about-text">
+              <div class="section-rule"><span>Our Story</span></div>
+              <h2 class="section-title mb-4">
+                A Labour of<br /><em style="font-style: italic">Love & Fire</em>
+              </h2>
+              <p>
+                La Casbah was born from a simple conviction: that food, when
+                prepared with intention, becomes a form of communication.
+                Founded in 2009 by Chef Karima Abidi, our kitchen has always
+                been a place of quiet discipline and joyful creativity.
+              </p>
+              <p>
+                Nestled in the heart of Algiers's (Alger Centre), we source
+                exclusively from small producers and family farms within 150 km
+                of our door. The seasons dictate our menu — never the other way
+                around.
+              </p>
+              <p>
+                Whether you join us for a weekday lunch or a celebratory dinner,
+                our promise remains unchanged: every detail, every flavour,
+                every moment — executed with care.
+              </p>
+              <a href="#contact" class="btn btn-gold mt-3"
+                >Make a Reservation</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /about -->
+
+    <!-- CONTACT SECTION -->
+
+    <section id="contact">
+      <div class="container">
+        <!-- Section Heading -->
+        <div class="text-center mb-5">
+          <div class="section-rule"><span>Get in Touch</span></div>
+          <h2 class="section-title">Reserve Your Table</h2>
+          <p class="section-intro">
+            We'd love to welcome you. Fill in the form below and our team will
+            confirm your reservation within 24 hours.
+          </p>
+        </div>
+
+        <!-- Contact Form -->
+        <form class="contact-form" novalidate>
+          <!-- Name -->
+          <div class="mb-4">
+            <label for="name" class="form-label">Full Name</label>
+            <input
+              type="text"
+              id="name"
+              class="form-control"
+              placeholder="Mourad Bennamane"
+              required
+            />
+          </div>
+
+          <!-- Email -->
+          <div class="mb-4">
+            <label for="email" class="form-label">Email Address</label>
+            <input
+              type="email"
+              id="email"
+              class="form-control"
+              placeholder="bennamane@example.com"
+              required
+            />
+          </div>
+
+          <!-- Message -->
+          <div class="mb-5">
+            <label for="message" class="form-label">Your Message</label>
+            <textarea
+              id="message"
+              class="form-control"
+              rows="4"
+              placeholder="Date, number of guests, dietary requirements…"
+            ></textarea>
+          </div>
+
+          <!-- Submit -->
+          <div class="text-center">
+            <button type="submit" class="btn btn-gold px-5">
+              Send Message
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- /contact -->
+
+    <!-- FOOTER -->
+
+    <footer>
+      <div class="container">
+        <div
+          class="d-flex flex-column flex-sm-row align-items-center justify-content-between gap-3"
+        >
+          <!-- Brand + Copyright -->
+          <div>
+            <div class="footer-brand">La Casbah</div>
+            <p class="footer-copy">
+              &copy; 2026 Bennamane Mourad | La Casbah. All rights reserved.
+            </p>
+          </div>
+
+          <!-- Social Icons -->
+          <div class="social-icons">
+            <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" aria-label="Instagram"
+              ><i class="bi bi-instagram"></i
+            ></a>
+            <a href="#" aria-label="Twitter/X"
+              ><i class="bi bi-twitter-x"></i
+            ></a>
+            <a href="#" aria-label="TripAdvisor"><i class="bi bi-star"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- /footer -->
+
+    <!-- Bootstrap 5 JS Bundle (Popper included) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      /* ---- Navbar scroll shadow ---- */
+      window.addEventListener("scroll", () => {
+        document.querySelector(".navbar").style.boxShadow =
+          window.scrollY > 40 ? "0 4px 30px rgba(0,0,0,.5)" : "none";
+      });
+    </script>
+  </body>
+</html>

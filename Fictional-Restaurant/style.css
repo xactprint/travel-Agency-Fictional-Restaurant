@@ -1,0 +1,348 @@
+
+
+    /*   CSS VARIABLES & BASE STYLES    */
+
+    :root {
+      --gold:    #c9a96e;
+      --gold-lt: #e8d5b0;
+      --dark:    #0e0d0b;
+      --charcoal:#1c1a16;
+      --warm:    #f7f3ec;
+      --muted:   #7a7468;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Jost', sans-serif;
+      background: var(--warm);
+      color: var(--dark);
+      font-weight: 300;
+    }
+
+    h1, h2, h3, h4 {
+      font-family: 'Cormorant Garamond', serif;
+    }
+
+    /* thin decorative rule */
+    .section-rule {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+    .section-rule::before,
+    .section-rule::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--gold);
+      opacity: .4;
+    }
+    .section-rule span {
+      font-family: 'Jost', sans-serif;
+      font-size: .7rem;
+      letter-spacing: .25em;
+      text-transform: uppercase;
+      color: var(--gold);
+    }
+
+    /* smooth scrolling */
+    html { scroll-behavior: smooth; }
+
+    /*   NAVBAR STYLES   */
+    .navbar {
+      background: rgba(14, 13, 11, .96) !important;
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid rgba(201,169,110,.15);
+      padding: 1.1rem 0;
+      transition: all .3s ease;
+    }
+
+    .navbar-brand {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.65rem;
+      font-weight: 600;
+      color: var(--gold) !important;
+      letter-spacing: .04em;
+    }
+    .navbar-brand span {
+      font-style: italic;
+      font-weight: 300;
+      color: #fff;
+    }
+
+    .nav-link {
+      color: rgba(255,255,255,.75) !important;
+      font-size: .78rem;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      padding: .4rem 1rem !important;
+      transition: color .25s;
+    }
+    .nav-link:hover { color: var(--gold) !important; }
+
+    .navbar-toggler { border-color: rgba(201,169,110,.4); }
+    .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(201,169,110,0.9)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+
+    
+    /*   HERO SECTION   */
+    
+    #hero {
+      position: relative;
+      height: 100vh;
+      min-height: 560px;
+      background: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1600&q=80') center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    /* dark gradient overlay */
+    #hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(160deg,
+        rgba(14,13,11,.82) 0%,
+        rgba(14,13,11,.55) 50%,
+        rgba(14,13,11,.75) 100%);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      animation: fadeUp .9s ease both;
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(28px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .hero-eyebrow {
+      font-size: .72rem;
+      letter-spacing: .3em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 1.2rem;
+    }
+
+    .hero-title {
+      font-size: clamp(2.8rem, 7vw, 5.5rem);
+      font-weight: 300;
+      color: #fff;
+      line-height: 1.05;
+      margin-bottom: 1.4rem;
+    }
+    .hero-title em {
+      font-style: italic;
+      color: var(--gold-lt);
+    }
+
+    .hero-sub {
+      font-size: 1rem;
+      color: rgba(255,255,255,.65);
+      font-weight: 300;
+      margin-bottom: 2.4rem;
+      letter-spacing: .05em;
+    }
+
+    .btn-gold {
+      background: transparent;
+      border: 1px solid var(--gold);
+      color: var(--gold);
+      font-size: .75rem;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+      padding: .85rem 2.4rem;
+      border-radius: 0;
+      transition: all .3s ease;
+    }
+    .btn-gold:hover {
+      background: var(--gold);
+      color: var(--dark);
+    }
+
+    
+    /*   SHARED SECTION STYLES  */
+    
+    section { padding: 6rem 0; }
+
+    .section-title {
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 300;
+      color: var(--dark);
+      margin-bottom: .4rem;
+    }
+
+    .section-intro {
+      color: var(--muted);
+      font-size: .92rem;
+      max-width: 480px;
+      margin: 0 auto 3.5rem;
+      line-height: 1.75;
+    }
+
+    
+    /*   MENU SECTION   */
+    
+    #menu { background: var(--charcoal); }
+
+    #menu .section-title,
+    #menu .section-intro { color: var(--warm); }
+    #menu .section-intro  { color: rgba(247,243,236,.55); }
+
+    .menu-card {
+      background: #242018;
+      border: 1px solid rgba(201,169,110,.12);
+      border-radius: 0;
+      overflow: hidden;
+      transition: transform .35s ease, border-color .35s ease;
+    }
+    .menu-card:hover {
+      transform: translateY(-6px);
+      border-color: rgba(201,169,110,.45);
+    }
+
+    .menu-card img {
+      height: 220px;
+      object-fit: cover;
+      width: 100%;
+      transition: transform .5s ease;
+    }
+    .menu-card:hover img { transform: scale(1.04); }
+
+    .menu-card .card-body { padding: 1.5rem; }
+
+    .menu-card .card-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.35rem;
+      font-weight: 400;
+      color: var(--warm);
+      margin-bottom: .5rem;
+    }
+
+    .menu-card .card-text {
+      font-size: .85rem;
+      color: rgba(247,243,236,.5);
+      line-height: 1.7;
+      margin-bottom: 1rem;
+    }
+
+    .price-tag {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.2rem;
+      color: var(--gold);
+      letter-spacing: .05em;
+    }
+
+    
+    /*   ABOUT SECTION   */
+    
+    #about { background: var(--warm); }
+
+    .about-img-wrap {
+      position: relative;
+      overflow: hidden;
+    }
+    .about-img-wrap img {
+      width: 100%;
+      height: 480px;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* decorative frame offset */
+    .about-img-wrap::after {
+      content: '';
+      position: absolute;
+      inset: 1.2rem -1.2rem -1.2rem 1.2rem;
+      border: 1px solid rgba(201,169,110,.35);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .about-text { padding: 1.5rem 0 1.5rem 2rem; }
+    @media (max-width: 767px) { .about-text { padding: 2rem 0 0; } }
+
+    .about-text p {
+      font-size: .95rem;
+      line-height: 1.9;
+      color: #4a4540;
+      margin-bottom: 1.2rem;
+    }
+
+    
+    /*   CONTACT SECTION   */
+    
+    #contact {
+      background: #f0ebe1;
+    }
+
+    .contact-form {
+      max-width: 640px;
+      margin: 0 auto;
+    }
+
+    .form-label {
+      font-size: .72rem;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: .4rem;
+    }
+
+    .form-control {
+      border: 0;
+      border-bottom: 1px solid rgba(122,116,104,.35);
+      border-radius: 0;
+      background: transparent;
+      padding: .6rem 0;
+      font-family: 'Jost', sans-serif;
+      font-size: .9rem;
+      color: var(--dark);
+      transition: border-color .25s;
+    }
+    .form-control:focus {
+      box-shadow: none;
+      border-color: var(--gold);
+      background: transparent;
+    }
+
+    textarea.form-control { resize: none; }
+
+    
+    /*   FOOTER   */
+    
+    footer {
+      background: var(--dark);
+      padding: 2.5rem 0;
+      border-top: 1px solid rgba(201,169,110,.15);
+    }
+
+    .footer-brand {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.4rem;
+      color: var(--gold);
+    }
+
+    .footer-copy {
+      font-size: .75rem;
+      color: rgba(255,255,255,.3);
+      letter-spacing: .08em;
+      margin-top: .3rem;
+    }
+
+    .social-icons a {
+      color: rgba(255,255,255,.4);
+      font-size: 1.1rem;
+      margin-left: 1rem;
+      transition: color .25s;
+      text-decoration: none;
+    }
+    .social-icons a:hover { color: var(--gold); }
+  

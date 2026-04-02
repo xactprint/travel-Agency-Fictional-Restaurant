@@ -1,0 +1,574 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Horizons Travel Agency</title>
+
+    <!-- Bootstrap 5 CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+
+    <nav class="navbar navbar-expand-lg sticky-top">
+      <div class="container">
+        <!-- Brand / Logo -->
+        <a class="navbar-brand" href="#hero">
+          <i class="bi bi-compass me-1" style="color: var(--sky)"></i>Horizons
+        </a>
+
+        <!-- Mobile Toggle -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#travelNav"
+          aria-controls="travelNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Nav Links -->
+        <div class="collapse navbar-collapse" id="travelNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item"><a class="nav-link" href="#hero">Home</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#destinations">Destinations</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#tours">Tours</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+          <a href="#contact" class="btn btn-book ms-lg-3">Book Now</a>
+        </div>
+      </div>
+    </nav>
+    <!-- /navbar -->
+
+    <!-- HERO SECTION -->
+
+    <section id="hero">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-xl-7">
+            <div class="hero-content">
+              <span class="hero-eyebrow">✦ Discover the World</span>
+              <h1 class="hero-title">
+                Your Next<br /><em>Adventure</em><br />Awaits You
+              </h1>
+              <p class="hero-sub">
+                Handcrafted journeys to over 60 destinations worldwide. Expert
+                guides, bespoke itineraries and memories that last a lifetime.
+              </p>
+              <div class="d-flex flex-wrap gap-3">
+                <a href="#destinations" class="btn-hero-primary"
+                  >Explore Destinations</a
+                >
+                <a href="#tours" class="btn-hero-secondary">View Tours</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stats Strip -->
+      <div class="hero-stats d-none d-md-block">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-auto stat-item">
+              <span class="stat-number">60+</span>
+              <span class="stat-label">Destinations</span>
+            </div>
+            <div class="col-auto d-flex align-items-center">
+              <div class="stat-divider"></div>
+            </div>
+            <div class="col-auto stat-item">
+              <span class="stat-number">12k</span>
+              <span class="stat-label">Happy Travellers</span>
+            </div>
+            <div class="col-auto d-flex align-items-center">
+              <div class="stat-divider"></div>
+            </div>
+            <div class="col-auto stat-item">
+              <span class="stat-number">18</span>
+              <span class="stat-label">Years Experience</span>
+            </div>
+            <div class="col-auto d-flex align-items-center">
+              <div class="stat-divider"></div>
+            </div>
+            <div class="col-auto stat-item">
+              <span class="stat-number">4.9★</span>
+              <span class="stat-label">Average Rating</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /hero -->
+
+    <!-- DESTINATIONS SECTION -->
+
+    <section id="destinations">
+      <div class="container">
+        <!-- Heading -->
+        <div class="text-center">
+          <span class="label-chip">Popular Destinations</span>
+          <h2 class="section-title">Where Do You<br />Want to Go?</h2>
+          <p class="section-intro">
+            From misty mountain passes to sun-drenched coastlines, our curated
+            destinations promise wonder at every turn.
+          </p>
+        </div>
+
+        <!-- Destination Cards -->
+        <div class="row g-4">
+          <!-- Card 1 — Japan -->
+          <div class="col-md-4">
+            <div class="dest-card card h-100 position-relative">
+              <span class="dest-badge">Most Popular</span>
+              <img
+                src="https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?w=600&q=80"
+                class="card-img-top"
+                alt="Tokyo, Japan"
+              />
+              <div class="card-body">
+                <h3 class="card-title">Tokyo, Japan</h3>
+                <p class="card-text">
+                  A dazzling collision of ancient temples and neon-lit towers.
+                  Savour ramen, witness the cherry blossoms, and get lost in the
+                  city's endless neighbourhoods.
+                </p>
+                <a href="#contact" class="btn-outline-sky">Learn More</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 — Iceland -->
+          <div class="col-md-4">
+            <div class="dest-card card h-100 position-relative">
+              <img
+                src="https://images.unsplash.com/photo-1529963183134-61a90db47eaf?w=600&q=80"
+                class="card-img-top"
+                alt="Iceland Northern Lights"
+              />
+              <div class="card-body">
+                <h3 class="card-title">Reykjavík, Iceland</h3>
+                <p class="card-text">
+                  Chase the Northern Lights, soak in geothermal pools and hike
+                  across otherworldly lava fields in the land of fire and ice.
+                </p>
+                <a href="#contact" class="btn-outline-sky">Learn More</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 — Morocco -->
+          <div class="col-md-4">
+            <div class="dest-card card h-100 position-relative">
+              <img
+                src="https://images.unsplash.com/photo-1517821099606-cef63a9bcda6?w=600&q=80"
+                class="card-img-top"
+                alt="Marrakech, Morocco"
+              />
+              <div class="card-body">
+                <h3 class="card-title">Marrakech, Morocco</h3>
+                <p class="card-text">
+                  Lose yourself in the labyrinthine medina, marvel at ornate
+                  riads and experience the magic of a Saharan sunset from the
+                  dunes.
+                </p>
+                <a href="#contact" class="btn-outline-sky">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /row -->
+      </div>
+    </section>
+    <!-- /destinations -->
+
+    <!-- TOURS SECTION (ACCORDION) -->
+
+    <section id="tours">
+      <div class="container">
+        <!-- Heading -->
+        <div class="text-center mb-5">
+          <span class="label-chip">Our Tours</span>
+          <h2 class="section-title">Curated Experiences</h2>
+          <p class="section-intro">
+            Every tour is thoughtfully designed to blend discovery, comfort and
+            authentic local connection.
+          </p>
+        </div>
+
+        <!-- Accordion -->
+        <div
+          class="accordion mx-auto"
+          id="toursAccordion"
+          style="max-width: 760px"
+        >
+          <!-- Tour 1 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#tour1"
+                aria-expanded="true"
+                aria-controls="tour1"
+              >
+                🌸 &nbsp; Japan: Temples, Sushi & Sakura — 10 Days
+              </button>
+            </h2>
+            <div
+              id="tour1"
+              class="accordion-collapse collapse show"
+              data-bs-parent="#toursAccordion"
+            >
+              <div class="accordion-body">
+                <div class="tour-meta">
+                  <span><i class="bi bi-calendar3"></i> 10 Days</span>
+                  <span><i class="bi bi-people"></i> Max 12 guests</span>
+                  <span
+                    ><i class="bi bi-wallet"></i> From 320.000 DZD /
+                    person</span
+                  >
+                  <span
+                    ><i
+                      class="bi bi-star-fill"
+                      style="color: var(--accent)"
+                    ></i>
+                    4.9 (128 reviews)</span
+                  >
+                </div>
+                <p>
+                  Journey from the buzzing streets of Tokyo through the timeless
+                  heritage of Kyoto to the deer-filled parks of Nara. Guided by
+                  a local cultural expert, you'll experience tea ceremonies,
+                  bullet trains, sushi masterclasses and snow-capped Mt Fuji.
+                </p>
+                <a href="#contact" class="link-sky">View Full Details →</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tour 2 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#tour2"
+                aria-expanded="false"
+                aria-controls="tour2"
+              >
+                🌌 &nbsp; Iceland: Aurora & Geysers — 7 Days
+              </button>
+            </h2>
+            <div
+              id="tour2"
+              class="accordion-collapse collapse"
+              data-bs-parent="#toursAccordion"
+            >
+              <div class="accordion-body">
+                <div class="tour-meta">
+                  <span><i class="bi bi-calendar3"></i> 7 Days</span>
+                  <span><i class="bi bi-people"></i> Max 10 guests</span>
+                  <span
+                    ><i class="bi bi-wallet"></i> From 265.000 DZD /
+                    person</span
+                  >
+                  <span
+                    ><i
+                      class="bi bi-star-fill"
+                      style="color: var(--accent)"
+                    ></i>
+                    4.8 (96 reviews)</span
+                  >
+                </div>
+                <p>
+                  Witness the Aurora Borealis from a glass-roofed cabin, explore
+                  the Golden Circle, snorkel between tectonic plates and relax
+                  in the Blue Lagoon. Best experienced October through March for
+                  maximum Northern Lights visibility.
+                </p>
+                <a href="#contact" class="link-sky">View Full Details →</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tour 3 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#tour3"
+                aria-expanded="false"
+                aria-controls="tour3"
+              >
+                🐪 &nbsp; Morocco: Desert, Souks & Riads — 8 Days
+              </button>
+            </h2>
+            <div
+              id="tour3"
+              class="accordion-collapse collapse"
+              data-bs-parent="#toursAccordion"
+            >
+              <div class="accordion-body">
+                <div class="tour-meta">
+                  <span><i class="bi bi-calendar3"></i> 8 Days</span>
+                  <span><i class="bi bi-people"></i> Max 14 guests</span>
+                  <span
+                    ><i class="bi bi-wallet"></i> From 219.000 DZD /
+                    person</span
+                  >
+                  <span
+                    ><i
+                      class="bi bi-star-fill"
+                      style="color: var(--accent)"
+                    ></i>
+                    4.9 (74 reviews)</span
+                  >
+                </div>
+                <p>
+                  Explore the winding souks of Marrakech, overnight in a luxury
+                  Sahara desert camp under a sky full of stars, visit the blue
+                  city of Chefchaouen and discover hidden kasbahs along the
+                  dramatic Drâa Valley.
+                </p>
+                <a href="#contact" class="link-sky">View Full Details →</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tour 4 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#tour4"
+                aria-expanded="false"
+                aria-controls="tour4"
+              >
+                🏝️ &nbsp; Maldives: Islands & Underwater World — 6 Days
+              </button>
+            </h2>
+            <div
+              id="tour4"
+              class="accordion-collapse collapse"
+              data-bs-parent="#toursAccordion"
+            >
+              <div class="accordion-body">
+                <div class="tour-meta">
+                  <span><i class="bi bi-calendar3"></i> 6 Days</span>
+                  <span><i class="bi bi-people"></i> Max 8 guests</span>
+                  <span
+                    ><i class="bi bi-wallet"></i> From 410.000 DZD /
+                    person</span
+                  >
+                  <span
+                    ><i
+                      class="bi bi-star-fill"
+                      style="color: var(--accent)"
+                    ></i>
+                    5.0 (42 reviews)</span
+                  >
+                </div>
+                <p>
+                  An intimate overwater bungalow escape with daily snorkelling
+                  among manta rays and sea turtles, sunset dolphin cruises,
+                  private sandbank picnics and one unforgettable bioluminescent
+                  night swim.
+                </p>
+                <a href="#contact" class="link-sky">View Full Details →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /accordion -->
+      </div>
+    </section>
+    <!-- /tours -->
+
+    <!-- CONTACT SECTION -->
+
+    <section id="contact">
+      <div class="container">
+        <!-- Heading -->
+        <div class="text-center mb-5">
+          <span class="label-chip">Contact Us</span>
+          <h2 class="section-title">Plan Your Journey</h2>
+          <p class="section-intro">
+            Fill in your details and one of our travel specialists will get back
+            to you within one business day.
+          </p>
+        </div>
+
+        <!-- Contact Form Card -->
+        <div class="contact-wrap">
+          <form novalidate>
+            <div class="row g-3">
+              <!-- Name -->
+              <div class="col-md-6">
+                <div class="form-floating">
+                  <input
+                    type="text"
+                    id="cName"
+                    class="form-control"
+                    placeholder="Full Name"
+                    required
+                  />
+                  <label for="cName">Full Name</label>
+                </div>
+              </div>
+
+              <!-- Email -->
+              <div class="col-md-6">
+                <div class="form-floating">
+                  <input
+                    type="email"
+                    id="cEmail"
+                    class="form-control"
+                    placeholder="Email Address"
+                    required
+                  />
+                  <label for="cEmail">Email Address</label>
+                </div>
+              </div>
+
+              <!-- Destination of Interest -->
+              <div class="col-12">
+                <div class="form-floating">
+                  <select id="cDest" class="form-select">
+                    <option value="" disabled selected>
+                      Select a destination
+                    </option>
+                    <option>Tokyo, Japan</option>
+                    <option>Reykjavík, Iceland</option>
+                    <option>Marrakech, Morocco</option>
+                    <option>Maldives</option>
+                    <option>Other / Not sure yet</option>
+                  </select>
+                  <label for="cDest">Destination of Interest</label>
+                </div>
+              </div>
+
+              <!-- Message -->
+              <div class="col-12">
+                <div class="form-floating">
+                  <textarea
+                    id="cMessage"
+                    class="form-control"
+                    placeholder="Your message"
+                    rows="4"
+                    style="height: 120px"
+                  ></textarea>
+                  <label for="cMessage">Your Message</label>
+                </div>
+              </div>
+
+              <!-- Submit -->
+              <div class="col-12 mt-2">
+                <button type="submit" class="btn btn-submit">
+                  Send My Enquiry &nbsp;<i class="bi bi-send"></i>
+                </button>
+              </div>
+            </div>
+            <!-- /row -->
+          </form>
+        </div>
+        <!-- /contact-wrap -->
+      </div>
+    </section>
+    <!-- /contact -->
+
+    <!-- FOOTER -->
+
+    <footer>
+      <div class="container">
+        <div class="row align-items-center gy-3">
+          <!-- Brand + Copyright -->
+          <div class="col-md-4 text-center text-md-start">
+            <div class="footer-brand">Hori<span>zons</span></div>
+            <p class="footer-copy">
+              &copy; 2026 Bennamane Mourad - Horizons Travel. All rights
+              reserved.
+            </p>
+          </div>
+
+          <!-- Links -->
+          <div class="col-md-4 text-center footer-links">
+            <a href="#hero">Home</a>
+            <a href="#destinations">Destinations</a>
+            <a href="#tours">Tours</a>
+            <a href="#contact">Contact</a>
+          </div>
+
+          <!-- Social Icons -->
+          <div class="col-md-4 text-center text-md-end social-icons">
+            <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" aria-label="Instagram"
+              ><i class="bi bi-instagram"></i
+            ></a>
+            <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+            <a href="#" aria-label="Pinterest"
+              ><i class="bi bi-pinterest"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- /footer -->
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      /* ---- Smooth navbar highlight on scroll ---- */
+      const sections = document.querySelectorAll("section[id]");
+      const navLinks = document.querySelectorAll(".nav-link");
+
+      window.addEventListener("scroll", () => {
+        let current = "";
+        sections.forEach((sec) => {
+          if (window.scrollY >= sec.offsetTop - 90) current = sec.id;
+        });
+        navLinks.forEach((link) => {
+          link.classList.toggle(
+            "active",
+            link.getAttribute("href") === `#${current}`,
+          );
+          if (link.classList.contains("active"))
+            link.style.color = "var(--sky)";
+          else link.style.color = "";
+        });
+      });
+    </script>
+  </body>
+</html>
